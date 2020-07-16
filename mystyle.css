@@ -1,6 +1,62 @@
 ul.horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.911);
+}
+body {
+    background: linear-gradient(to right,rgba(192, 176, 176, 0.336),rgba(103, 109, 128, 0.582));
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(44, 41, 46);
+}
+#my-face {
+    border-radius:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.img-div {
+    margin-top: 20px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
     background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
